@@ -2,16 +2,43 @@
 
 import UIKit
 
-var str = "Hello, playground"
+class Contacto: NSObject {
+    var nombre:String = "";
+    var telefono:Int = 0
+}
+var contactos = Array<Contacto>();
 
-var primerVariable : String = "hola mundo" //variable que se puede modificar en cualquier parte del codigo
 
-let primerVariableconstante :String = "hello word" //constante que solo almacena una valor
+func initContactos () {
+    //Estudiante 1
+    var tmp:Contacto = Contacto();
+    tmp.nombre = "Iván Díaz";
+    tmp.telefono = 123456789;
+    contactos.append(tmp);
+    
+    //Estudiante 2
+    tmp = Contacto();
+    tmp.nombre = "Andres Ávila";
+    tmp.telefono = 987654321;
+    contactos.append(tmp);
+    
+    //Estudiante 3
+    tmp = Contacto();
+    tmp.nombre = "Sebastian";
+    tmp.telefono = 978787638;
+    contactos.append(tmp);
+    
+    //Estudiante 4
+    tmp = Contacto();
+    tmp.nombre = "carlos ortega";
+    tmp.telefono = 13243484;
+    contactos.append(tmp);
+    
+    }
+print array<contactos>
 
-//asignamos otra cadena de texto dentro de la variable primeraaVariable
-primerVariable = "se modifica esta variable"
 
-//imprinir en consola las variables y constantes que tenemos en nuestro proyecto
-print(primerVariable)
-print(primerVariableconstante)
+}
+
+
 
